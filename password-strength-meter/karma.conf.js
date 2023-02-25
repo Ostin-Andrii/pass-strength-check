@@ -25,7 +25,7 @@ module.exports = function (config) {
       suppressAll: true // removes the duplicated traces
     },
     coverageReporter: {
-      dir: require('path').join(__dirname, './coverage/password-strength-meter'),
+      dir: require('path').join(__dirname, './coverage/password-strength-check'),
       subdir: '.',
       reporters: [
         { type: 'html' },

@@ -3,13 +3,9 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "password-strength-meter": {
+    "password-strength-check": {
       "projectType": "application",
-      "schematics": {
-        "@schematics/angular:component": {
-          "style": "scss"
-        }
-      },
+      "schematics": {},
       "root": "",
       "sourceRoot": "src",
       "prefix": "app",
@@ -17,18 +13,17 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/password-strength-meter",
+            "outputPath": "dist/password-strength-check",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
             "tsConfig": "tsconfig.app.json",
-            "inlineStyleLanguage": "scss",
             "assets": [
               "src/favicon.ico",
               "src/assets"
             ],
             "styles": [
-              "src/styles.scss"
+              "src/styles.css"
             ],
             "scripts": []
           },
@@ -69,10 +64,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "browserTarget": "password-strength-meter:build:production"
+              "browserTarget": "password-strength-check:build:production"
             },
             "development": {
-              "browserTarget": "password-strength-meter:build:development"
+              "browserTarget": "password-strength-check:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -80,7 +75,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "password-strength-meter:build"
+            "browserTarget": "password-strength-check:build"
           }
         },
         "test": {
@@ -90,13 +85,12 @@
             "polyfills": "src/polyfills.ts",
             "tsConfig": "tsconfig.spec.json",
             "karmaConfig": "karma.conf.js",
-            "inlineStyleLanguage": "scss",
             "assets": [
               "src/favicon.ico",
               "src/assets"
             ],
             "styles": [
-              "src/styles.scss"
+              "src/styles.css"
             ],
             "scripts": []
           }
@@ -105,6 +99,6 @@
     }
   },
   "cli": {
-    "analytics": "b12c6cd0-9f3f-44d5-9521-b95dfe5aee11"
+    "analytics": "7cf77b83-9425-4030-931c-868c616dced8"
   }
 }
