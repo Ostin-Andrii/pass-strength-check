@@ -29,7 +29,7 @@ export class PasswordStrengthComponent implements OnChanges {
   checkStrength(password: string) {
     let passwordForce = 0;
 
-    const regex = /[$-/:-?{-~!"^_@`\[\]]/g;
+    const regex = /[$-/:-?{-~!"^_#@`\[\]]/g;
     const letters = /[A-Za-z]+/.test(password);
     const numbers = /[0-9]+/.test(password);
     const symbols = regex.test(password);
